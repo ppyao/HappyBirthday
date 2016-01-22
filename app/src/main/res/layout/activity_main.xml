@@ -27,8 +27,7 @@
             android:fontFamily="sans-serif-light"
             android:text="topping"
             android:textAllCaps="true"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
+            style="@style/HeaderTextStyle" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -64,8 +63,7 @@
             android:fontFamily="sans-serif-light"
             android:text="quantity"
             android:textAllCaps="true"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
+            style="@style/HeaderTextStyle" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,8 +103,7 @@
             android:fontFamily="sans-serif-light"
             android:text="Price"
             android:textAllCaps="true"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="16sp" />
+            style="@style/HeaderTextStyle"  />
 
         <TextView
             android:id="@+id/price_text_view"
