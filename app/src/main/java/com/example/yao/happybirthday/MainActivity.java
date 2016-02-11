@@ -18,12 +18,44 @@ import java.text.NumberFormat;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
+    private final String LOG_TAG = MainActivity.class.getSimpleName();
     int quantity = 99;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onCreate");
+    }
+
+    protected void onStart() {
+        super.onStart();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onStart");
+    }
+
+    protected void onRestart() {
+        super.onRestart();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onRestart");
+    }
+
+    protected void onResume() {
+        super.onResume();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onResume");
+    }
+
+    protected void onPause() {
+        super.onPause();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onPause");
+    }
+
+    protected void onStop() {
+        super.onStop();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onStop");
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.v(LOG_TAG, "Let's look at lifecycle: Call onDestroy");
     }
 
     /**
